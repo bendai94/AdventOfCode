@@ -10,3 +10,8 @@
 
 # Built Visual Studio Code Extensions
 *.vsix
+
+# example files
+foo.txt
+day1.txt
+app.js
