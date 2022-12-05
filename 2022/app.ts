@@ -1,20 +1,12 @@
-import * as fs from 'fs';
-
 const {readFileSync, promises: fsPromises} = require('fs');
 
 function syncReadFile(filename): string[] {
     const contents = readFileSync(filename, 'utf-8');
-
     const arr = contents.split(/\r?\n/);
-
-    
     return arr;
 }
 
-
 let list = syncReadFile('./day1.txt');
-
-// console.log(list);
 
 let One = 0;
 let Two = 0;
@@ -53,7 +45,6 @@ function checkCount(count) {
 }
 
 console.log(One + Two + Thr);
-
 
 let message: string = "End Of Line";
 console.log(message);
